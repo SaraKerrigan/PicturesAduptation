@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/mob.css" />
+  </head>
+  <body>
+    <div class="header__menu">
+      <button class="header__menu-close">
+        <img src="assets/img/krest.png" alt="" />
+      </button>
+      <a href="">Репродукции</a>
+      <a href="">Новинки</a>
+      <a href="">О нас</a>
+    </div>
+    <div class="header__mob">
+      <div class="wrapper header__mob-wrapper">
+        <div class="header__mob-top">
+          <a class="header__mob-logo" href=""
+            ><img src="assets/img/header-logo.png" alt=""
+          /></a>
+          <a class="header__mob-text" href="">Ink. House</a>
+        </div>
+        <div class="header__mob-bottom">
+          <button class="header__mob-burger">
+            <img src="assets/img/burger.svg" alt="" />
+          </button>
+          <a href="header__mob-basket"
+            ><img src="assets/img/header-basket.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <div class="header__logo">
+          <a class="header__logo-img" href=""
+            ><img src="assets/img/header-logo.png" alt=""
+          /></a>
+          <a class="header__logo-title" href="">Ink. House</a>
+        </div>
+        <div class="header__line-mob"></div>
+        <div class="header__items">
+          <a class="header__item" href="">Репродукции</a>
+          <a class="header__item" href="">Новинки</a>
+          <a class="header__item" href="">О нас</a>
+          <a class="header__item" href=""
+            ><img src="assets/img/header-basket.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="slider">
+        <div class="wrapper slider__wrapper">
+          <img
+            class="slider__main-img"
+            src="assets/img/slider-main-img.jpeg"
+            alt=""
+            data-fancybox
+          />
+          <img
+            class="slider__tablet-img"
+            src="assets/img/slider-tablet-img.jpeg"
+            alt=""
+          />
+          <img
+            class="slider__mob-img"
+            src="assets/img/slider-mob.jpeg"
+            alt=""
+          />
+          <div class="slider__item">
+            <h1 class="slider__header">
+              Реплики картин от <span class="slider__header-span"
+                >Ink. House</span
+              >
+            </h1>
+            <p class="slider__text">
+              Высокое качество отрисовки на плотной бумаге или льняном холсте.
+              Редкие произведения, доступные цены.
+            </p>
+            <a class="slider__link" href="">Продукция</a>
+          </div>
+        </div>
+      </section>
+      <section class="buttons">
+        <div class="wrapper buttons__wrapper">
+          <h2 class="buttons__header">Репродукции</h2>
+          <div class="buttons__items">
+            <button
+              class="button__item-france button__active"
+              onclick="displayCountry('france')"
+            >
+              Франция
+            </button>
+            <button
+              class="button__item-germany"
+              onclick="displayCountry('germany')"
+            >
+              Германия
+            </button>
+            <button
+              class="button__item-england"
+              onclick="displayCountry('england')"
+            >
+              Англия
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="arrows">
+        <div class="wrapper arrows__wrapper">
+          <button class="arrow__left">Влево</button>
+          <button class="arrow__rigth">Вправо</button>
+        </div>
+      </section>
+
+      <section class="pictures__items-france">
+        <div class="wrapper">
+          <div class="swiper swiper__pictures">
+            <div class="swiper-wrapper pictures__wrapper">
+              <div class="swiper-slide">
+                <div class="picture__item">
+                  <img
+                    class="picture__item-img"
+                    src="assets/img/fr1.jpeg"
+                    alt=""
+                    data-fancybox
+                    data-caption="Охота Амура &lt;br /&gt Холст, масло (50х80)"
+                  />
+                  <h4 class="picture__item-name">Марсель Руссо</h4>
+                  <h3 class="picture__item-label">Охота Амура</h3>
+                  <p class="picture__item-text">Холст, масло (50х80)</p>
+                  <p class="picture__item-price">14 500 руб</p>
+                  <button class="picture__item-btn">В корзину</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture__item">
+                  <img
+                    class="picture__item-img"
+                    src="assets/img/fr2.jpeg"
+                    alt=""
+                    data-fancybox
+                  />
+                  <h4 class="picture__item-name">Анри Селин</h4>
+                  <h3 class="picture__item-label">Дама с собачкой</h3>
+                  <p class="picture__item-text">Акрил, бумага (50х80)</p>
+                  <p class="picture__item-price">16 500 руб</p>
+                  <button class="picture__item-btn">В корзину</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture__item">
+                  <img
+                    class="picture__item-img"
+                    src="assets/img/fr3.jpeg"
+                    alt=""
+                    data-fancybox
+                  />
+                  <h4 class="picture__item-name">Франсуа Дюпон</h4>
+                  <h3 class="picture__item-label">Процедура</h3>
+                  <p class="picture__item-text">Цветная литография (40х60)</p>
+                  <p class="picture__item-price">20 000 руб</p>
+                  <button class="picture__item-btn">В корзину</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture__item">
+                  <img
+                    class="picture__item-img"
+                    src="assets/img/fr4.jpeg"
+                    alt=""
+                    data-fancybox
+                  />
+                  <h4 class="picture__item-name">Луи Детуш</h4>
+                  <h3 class="picture__item-label">Роза</h3>
+                  <p class="picture__item-text">Бумага, акрил (50х80)</p>
+                  <p class="picture__item-price">12 000 руб</p>
+                  <button class="picture__item-btn">В корзину</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture__item">
+                  <img
+                    class="picture__item-img"
+                    src="assets/img/fr5.jpeg"
+                    alt=""
+                    data-fancybox
+                  />
+                  <h4 class="picture__item-name">Франсуа Дюпон</h4>
+                  <h3 class="picture__item-label">Птичья трапеза</h3>
+                  <p class="picture__item-text">Цветная литография (40х60)</p>
+                  <p class="picture__item-price">22 500 руб</p>
+                  <button class="picture__item-btn">В корзину</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture__item">
+                  <img
+                    class="picture__item-img"
+                    src="assets/img/fr6.jpeg"
+                    alt=""
+                    data-fancybox
+                  />
+                  <h4 class="picture__item-name">Пьер Моранж</h4>
+                  <h3 class="picture__item-label">Пейзаж с рыбой</h3>
+                  <p class="picture__item-text">Цветная литография (40х60)</p>
+                  <p class="picture__item-price">20 000 руб</p>
+                  <button class="picture__item-btn">В корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pictures__items-germany">
+        <div class="wrapper">
+          <div class="swiper swiper__pictures">
+            <div class="swiper-wrapper pictures__wrapper">
+              <div class="swiper-slide">
+                <div class="picture__item">
+                  <img
+                    class="picture__item-img"
+                    src="assets/img/gr1.jpeg"
+                    alt=""
+                    data-fancybox="gallery"
+                  />
+                  <h4 class="picture__item-name">Марсель Руссо</h4>
+                  <h3 class="picture__item-label">Охота Амура</h3>
+                  <p class="picture__item-text">Холст, масло (50х80)</p>
+                  <p class="picture__item-price">14 500 руб</p>
+                  <button class="picture__item-btn">В корзину</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture__item">
+                  <img
+                    class="picture__item-img"
+                    src="assets/img/gr2.jpeg"
+                    alt=""
+                    data-fancybox="gallery"
+                  />
+                  <h4 class="picture__item-name">Анри Селин</h4>
+                  <h3 class="picture__item-label">Дама с собачкой</h3>
+                  <p class="picture__item-text">Акрил, бумага (50х80)</p>
+                  <p class="picture__item-price">16 500 руб</p>
+                  <button class="picture__item-btn">В корзину</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture__item">
+                  <img
+                    class="picture__item-img"
+                    src="assets/img/gr3.jpeg"
+                    alt=""
+                    data-fancybox="gallery"
+                  />
+                  <h4 class="picture__item-name">Франсуа Дюпон</h4>
+                  <h3 class="picture__item-label">Процедура</h3>
+                  <p class="picture__item-text">Цветная литография (40х60)</p>
+                  <p class="picture__item-price">20 000 руб</p>
+                  <button class="picture__item-btn">В корзину</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture__item">
+                  <img
+                    class="picture__item-img"
+                    src="assets/img/gr4.jpeg"
+                    alt=""
+                    data-fancybox="gallery"
+                  />
+                  <h4 class="picture__item-name">Луи Детуш</h4>
+                  <h3 class="picture__item-label">Роза</h3>
+                  <p class="picture__item-text">Бумага, акрил (50х80)</p>
+                  <p class="picture__item-price">12 000 руб</p>
+                  <button class="picture__item-btn">В корзину</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture__item">
+                  <img
+                    class="picture__item-img"
+                    src="assets/img/gr5.jpeg"
+                    alt=""
+                    data-fancybox="gallery"
+                  />
+                  <h4 class="picture__item-name">Франсуа Дюпон</h4>
+                  <h3 class="picture__item-label">Птичья трапеза</h3>
+                  <p class="picture__item-text">Цветная литография (40х60)</p>
+                  <p class="picture__item-price">22 500 руб</p>
+                  <button class="picture__item-btn">В корзину</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture__item">
+                  <img
+                    class="picture__item-img"
+                    src="assets/img/gr6.jpeg"
+                    alt=""
+                    data-fancybox="gallery"
+                  />
+                  <h4 class="picture__item-name">Пьер Моранж</h4>
+                  <h3 class="picture__item-label">Пейзаж с рыбой</h3>
+                  <p class="picture__item-text">Цветная литография (40х60)</p>
+                  <p class="picture__item-price">20 000 руб</p>
+                  <button class="picture__item-btn">В корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pictures__items-england">
+        <div class="wrapper">
+          <div class="swiper swiper__pictures">
+            <div class="swiper-wrapper pictures__wrapper">
+              <div class="swiper-slide">
+                <div class="picture__item" data-fancybox="gallery">
+                  <img
+                    class="picture__item-img"
+                    src="assets/img/en1.jpeg"
+                    alt=""
+                  />
+                  <h4 class="picture__item-name">Марсель Руссо</h4>
+                  <h3 class="picture__item-label">Охота Амура</h3>
+                  <p class="picture__item-text">Холст, масло (50х80)</p>
+                  <p class="picture__item-price">14 500 руб</p>
+                  <button class="picture__item-btn">В корзину</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture__item" data-fancybox="gallery">
+                  <img
+                    class="picture__item-img"
+                    src="assets/img/en2.jpeg"
+                    alt=""
+                  />
+                  <h4 class="picture__item-name">Анри Селин</h4>
+                  <h3 class="picture__item-label">Дама с собачкой</h3>
+                  <p class="picture__item-text">Акрил, бумага (50х80)</p>
+                  <p class="picture__item-price">16 500 руб</p>
+                  <button class="picture__item-btn">В корзину</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture__item" data-fancybox="gallery">
+                  <img
+                    class="picture__item-img"
+                    src="assets/img/en3.jpeg"
+                    alt=""
+                  />
+                  <h4 class="picture__item-name">Франсуа Дюпон</h4>
+                  <h3 class="picture__item-label">Процедура</h3>
+                  <p class="picture__item-text">Цветная литография (40х60)</p>
+                  <p class="picture__item-price">20 000 руб</p>
+                  <button class="picture__item-btn">В корзину</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture__item" data-fancybox="gallery">
+                  <img
+                    class="picture__item-img"
+                    src="assets/img/en4.jpeg"
+                    alt=""
+                  />
+                  <h4 class="picture__item-name">Луи Детуш</h4>
+                  <h3 class="picture__item-label">Роза</h3>
+                  <p class="picture__item-text">Бумага, акрил (50х80)</p>
+                  <p class="picture__item-price">12 000 руб</p>
+                  <button class="picture__item-btn">В корзину</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture__item" data-fancybox="gallery">
+                  <img
+                    class="picture__item-img"
+                    src="assets/img/en5.jpeg"
+                    alt=""
+                  />
+                  <h4 class="picture__item-name">Франсуа Дюпон</h4>
+                  <h3 class="picture__item-label">Птичья трапеза</h3>
+                  <p class="picture__item-text">Цветная литография (40х60)</p>
+                  <p class="picture__item-price">22 500 руб</p>
+                  <button class="picture__item-btn">В корзину</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="picture__item" data-fancybox="gallery">
+                  <img
+                    class="picture__item-img"
+                    src="assets/img/en6.jpeg"
+                    alt=""
+                  />
+                  <h4 class="picture__item-name">Пьер Моранж</h4>
+                  <h3 class="picture__item-label">Пейзаж с рыбой</h3>
+                  <p class="picture__item-text">Цветная литография (40х60)</p>
+                  <p class="picture__item-price">20 000 руб</p>
+                  <button class="picture__item-btn">В корзину</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <div class="wrapper info__wrapper">
+          <info class="info__header">
+            <img class="info__img" src="assets/img/yellow-star.png" alt="" />
+            <h2 class="info__title">Новая коллекция французских авторов</h2>
+          </info>
+          <div class="info__text">
+            <p class="info__text-p">
+              Сложно сказать, почему акционеры крупнейших компаний призывают нас
+              к новым свершениям, которые, в свою очередь, должны быть
+              заблокированы в рамках своих собственных рациональных ограничений
+            </p>
+            <p class="info__text-p">
+              Принимая во внимание показатели успешности, граница обучения
+              кадров предопределяет высокую востребованность направлений
+              прогрессивного развития.
+            </p>
+          </div>
+          <a class="info__text-btn" href="">Ознакомиться</a>
+        </div>
+      </section>
+      <section class="staff">
+        <div class="wrapper staff__wrapper">
+          <img class="staff__img" src="assets/img/picture-bottom.jpg" alt="" />
+          <div class="staff__content">
+            <h3 class="staff__content-header">Наша команда</h3>
+            <p class="staff__content-text">
+              Значимость этих проблем настолько очевидна, что базовый вектор
+              развития позволяет оценить значение экспериментов, поражающих
+              по своей масштабности и грандиозности. Мы вынуждены отталкиваться
+              от того, что консультация с широким активом.
+            </p>
+            <div class="staff__content-icons">
+              <img class="staff__icon" src="assets/img/staff1.jpeg" alt="" />
+              <img class="staff__icon" src="assets/img/staff2.jpeg" alt="" />
+              <img class="staff__icon" src="assets/img/staff3.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="swiper.js"></script>
+    <script src="switch.js"></script>
+    <script src="fancy.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>
